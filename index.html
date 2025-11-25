@@ -21,6 +21,7 @@
   </head>
 
   <body>
+    <!-- #region header-->
     <header class="page-header">
       <div class="container header-container">
         <nav class="header-nav">
@@ -50,10 +51,87 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="/images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" type="button" data-menu-close>
+            <svg class="" width="8" height="8">
+              <use href="/images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-nav-list">
+              <li class="mobile-menu-nav-item">
+                <a class="mobile-menu-nav-link" href="./index.html">Studio</a>
+              </li>
+              <li class="mobile-menu-nav-item">
+                <a class="mobile-menu-nav-link" href="#">Portfolio</a>
+              </li>
+              <li class="mobile-menu-nav-item">
+                <a class="mobile-menu-nav-link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-menu-address">
+            <ul class="mobile-menu-address-list">
+              <li class="mobile-menu-address-item">
+                <a class="mobile-menu-address-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-menu-address-item">
+                <a
+                  class="mobile-menu-address-link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="menu-box-social">
+            <ul class="menu-social-list">
+              <li class="menu-social-item">
+                <a class="menu-social-link" href="#">
+                  <svg class="menu-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-social-item">
+                <a class="menu-social-link" href="#">
+                  <svg class="menu-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-social-item">
+                <a class="menu-social-link" href="#">
+                  <svg class="menu-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-social-item">
+                <a class="menu-social-link" href="#">
+                  <svg class="menu-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
+    <!-- #endregion -->
 
     <main>
+      <!-- #region hero-->
       <section class="section hero-section">
         <div class="container hero-container">
           <h1 class="hero-title">
@@ -65,7 +143,9 @@
           </button>
         </div>
       </section>
+      <!-- #endregion -->
 
+      <!-- #region features-->
       <section class="section features-section">
         <div class="container">
           <h2 class="features-section-title visually-hidden">
@@ -123,8 +203,10 @@
           </ul>
         </div>
       </section>
+      <!-- #endregion -->
 
-      <section class="section team-section">
+      <!-- #region team-->
+      <section class="section team-section hidden">
         <div class="container">
           <h2 class="team-section-title">Our Team</h2>
           <ul class="team-section-list">
@@ -291,8 +373,10 @@
           </ul>
         </div>
       </section>
+      <!-- #endregion -->
 
-      <section class="section section-portfolio">
+      <!-- #region portfolio-->
+      <section class="section section-portfolio hidden">
         <div class="container">
           <h2 class="section-portfolio-title">Our Portfolio</h2>
           <ul class="section-portfolio-list">
@@ -409,9 +493,11 @@
           </ul>
         </div>
       </section>
+      <!-- #endregion -->
     </main>
 
-    <footer class="page-footer">
+    <!-- #region footer-->
+    <footer class="page-footer hidden">
       <div class="footer-container">
         <div class="footer-box-logo">
           <a class="logo footer-logo" href="./index.html">
@@ -478,8 +564,10 @@
         </div>
       </div>
     </footer>
+    <!-- #endregion -->
 
-    <div class="backdrop is-open" data-modal>
+    <!-- #region modal-->
+    <div class="backdrop is-open hidden" data-modal>
       <div class="modal">
         <button class="close-btn" type="button" data-modal-close>
           <svg class="close-icon" width="8" height="8">
@@ -558,5 +646,7 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+    <!-- #endregion -->
   </body>
 </html>
