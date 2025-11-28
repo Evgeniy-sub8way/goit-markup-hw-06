@@ -687,7 +687,7 @@ button {
   .team-section-list {
     gap: 24px;
     /* row-gap: 64px; */
-    flex-wrap: nowrap`;
+    flex-wrap: nowrap;
     padding: 0 28px 120px;
   }
   .team-section-item {
