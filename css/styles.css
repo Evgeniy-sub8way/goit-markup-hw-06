@@ -594,7 +594,7 @@ button {
 .team-section-list {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 72px;
+  gap: 72px;
   padding: 0 28px 96px;
   justify-content: center;
 }
@@ -679,6 +679,7 @@ button {
     padding: 0 92px 96px;
   }
   .team-section-item {
+    max-width: 264px;
     flex-basis: calc((100% - 24px) / 2);
   }
 }
